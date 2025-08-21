@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML- und CSS-Vorlage</title>
+        <style>
+            :root {
+                --fifty-gray: rgb(127,127,127);
+                --color-red: rgb(235,50,55);
+                --color-green: rgb(20,155,20);
+                --color-blue: rgb(25,40,210);
+                --night-color: rgb(210,210,210);
+                --night-bg: rgb(30,30,30);
+                --night-red: rgb(215,50,55);
+                --night-green: rgb(20,155,20);
+                --night-blue: rgb(95,110,255);
+                --night-purple: rgb(160,90,205);
+                --bg-transparent: rgba(127,127,127,.05);
+            }
+            * {
+                scroll-margin-top: 1rem;
+            }
+            html {
+                font-family: system-ui, sans-serif;
+                font-variant-ligatures: normal;
+                font-variant-numeric: slashed-zero;
+                font-size: 1.1rem;
+                line-height: 1.5;
+                hyphens: auto;
+                quotes: "\201e" "\201c" "\201a" "\2018";
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            body {
+                padding: 1rem;
+                padding-left: 7.5%;
+                padding-right: 7.5%;
+            }
+            header {
+                border-bottom: 1px solid var(--fifty-gray);
+                margin-bottom: 2.5rem;
+            }
+            footer {
+                border-top: 1px solid var(--fifty-gray);
+                margin-top: 2.5rem;
+                font-size: .85rem;
+                color: var(--fifty-gray);
+            }
+            h1, h2, h3, h4, h5, h6 {
+                line-height: 1.33;
+            }
+            h1 {
+                hyphens: none;
+            }
+            hr {
+                height: 0px;
+                color: transparent;
+                border: none;
+                border-top: 1px solid var(--fifty-gray);
+            }
+            table {
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+                border-collapse: collapse;
+                border-top: 2px solid;
+                border-bottom: 1.5px solid;
+                font-size: .9rem;
+            }
+            tr {
+                border-bottom: .75px solid var(--fifty-gray);
+            }
+            th, td {
+                padding: .5rem;
+                text-align: left;
+                vertical-align: baseline;
+            }
+            li {
+                padding-top: 0;
+                padding-bottom: .25rem;
+            }
+            dt {
+                font-weight: 700;
+            }
+            q {
+                font-style: italic;
+            }
+            blockquote {
+                margin-inline-start: 0;
+                margin-inline-end: 0;
+                border-left: 1.5px solid;
+                padding: .5rem;
+                padding-left: 1rem;
+                font-size: .95rem;
+            }
+            var {
+                font-family: serif;
+                font-style: italic;
+                font-size: 1.2rem;
+                padding-right: 0.075em;
+                line-height: normal;
+            }
+            kbd {
+                font-size: .92rem;
+            }
+            code {
+                font-size: .85rem;
+                border: 1px solid var(--fifty-gray);
+                border-radius: .2rem;
+                background-color: var(--bg-transparent);
+                padding: .1rem;
+                padding-left: .2rem;
+                padding-right: .2rem;
+            }
+            math {
+                font-size: 1.1rem;
+            }
+            .x-overflow {
+                overflow-x: auto;
+            }
+            .codeblock {
+                border-top: 1px solid var(--fifty-gray);
+                border-bottom: 1px solid var(--fifty-gray);
+                background-color: var(--bg-transparent);
+                padding: 1rem;
+                font-family: monospace;
+                font-size: .8em;
+                white-space: nowrap;
+            }
+            .name {
+                text-transform: uppercase;
+                font-size: .9rem;
+                letter-spacing: .033rem;
+            }
+            .red { color: var(--color-red); }
+            .green { color: var(--color-green); }
+            .blue { color: var(--color-blue); }
+            .bg { background-color: var(--bg-transparent); }
+            @media (prefers-color-scheme: dark) {
+                html {
+                    color: var(--night-color);
+                    background-color: var(--night-bg);
+                }
+                a { color: var(--night-blue); }
+                a:visited { color: var(--night-purple); }
+                a:active { color: var(--night-red); }
+                .red { color: var(--night-red); }
+                .green { color: var(--night-green); }
+                .blue { color: var(--night-blue); }
+            }
+            @media print {
+                html {
+                    font-size: .75em;
+                }
+                img {
+                    page-break-before: auto;
+                    page-break-after: auto;
+                    page-break-inside: avoid;
+                }
+                h1, h2, h3, h4, h5, h6 {
+                    page-break-inside: avoid;
+                    page-break-after: avoid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-container">
+            <header>
+                <h1>Minimale HTML- und CSS-Vorlage für Textdokumente</h1>
+                <nav id="nav" hidden>
+                    <!-- Navigation -->
+                </nav>
+            </header>
+            <main>
+                <div id="toc">
+                    <!-- Table of Contents -->
+                </div>
+                <article lang="de">
+                    <!-- Article content -->
+                    <h2 id="test">Überschrift 2.&nbsp;Ordnung</h2>
+                    <p>Auch gibt es <em>niemanden</em>, der den <b>Schmerz</b> an sich liebt, sucht oder wünscht <u>nur</u>, weil er Schmerz ist, <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" rel="noopener noreferrer">es sei denn</a>, es kommt zu <q>zufälligen Umständen</q>, in denen Mühen und Schmerz ihm große <code>Freude bereiten</code> können. Um ein triviales Beispiel zu nehmen, wer von uns <kbd>unterzieht sich</kbd> je anstrengender körperlicher <span class="name">Betätigung</span>, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht <var>x</var>, einen Menschen zu tadeln</p>
+                    <ul>
+                        <li>der die Entscheidung trifft,</li>
+                        <li>eine Freude zu genießen,</li>
+                        <li>die keine unangenehmen Folgen hat</li>
+                    </ul>
+                    <p>oder einen, der <span class="blue">Schmerz vermeidet</span>, welcher keine daraus <span class="green">resultierende Freude</span> nach sich zieht? Auch gibt es <span class="red">niemanden</span>, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn.</p>
+                    <h3>Überschrift 3.&nbsp;Ordnung</h3>
+                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <div class="x-overflow">
+                        <table>
+                            <tr class="bg"><th colspan="4">Das ist eine Tabelle</th></tr>
+                            <tr><th style="min-width:5rem">Stadium&nbsp;I</th><td style="min-width:5rem">Lorem ipsum dolor sit amet</td><td style="min-width:5rem">sed diam nonumy eirmod tempor</td><td style="min-width:5rem">consetetur sadipscing elitr</td></tr>
+                            <tr><th>Stadium&nbsp;II</th><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td><td>sed diam nonumy eirmod tempor</td></tr>
+                            <tr><th>Stadium&nbsp;III</th><td>sed diam nonumy eirmod tempor</td><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td></tr>
+                        </table>
+                    </div>
+                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <blockquote lang="de">Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen <b>Mühen und Schmerz</b>. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu <q>zufälligen Umständen</q>, in denen Mühen und Schmerz. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</blockquote>
+                    <h4>Überschrift 4.&nbsp;Ordnung</h4>
+                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <div class="codeblock x-overflow">
+                        <b>from</b> html.parser <b>import</b> <span class="blue">HTMLParser</span><br>
+                        <br>
+                        <b>class</b> <span class="blue">TinyHTMLParser</span>(<span class="blue">HTMLParser</span>):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_starttag</span></i>(self, tag, attrs):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'start-tag:'</span>, tag,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'with attributes:'</span>, attrs)<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_endtag</span></i>(self, tag):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'end-tag:'</span>, tag)<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_data</span></i>(self, data):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'data:'</span>, data)<br>
+                        <br>
+                        html_text = <span class="green">'insert HTML markup here'</span><br>
+                        <span class="blue">parser</span> = <span class="blue">TinyHTMLParser</span>()<br>
+                        <span class="blue">parser</span><i><span class="red">.feed</span></i>(html_text)<br>
+                    </div>
+                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <math>
+                        <mstyle displaystyle="true">
+                            <munderover>
+                                <mo>&Sum;</mo>
+                                <mrow><mi>i</mi><mo>=</mo><mn>1</mn>
+                                </mrow>
+                                <mi>n</mi>
+                            </munderover>
+                        </mstyle>
+                        <msub>
+                            <mi>a</mi>
+                            <mi>i</mi>
+                        </msub>
+                        <mo>=</mo> 
+                        <mrow>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr><mtd><mn>1</mn></mtd></mtr>
+                                <mtr><mtd><mn>2</mn></mtd></mtr>
+                                <mtr><mtd><mn>3</mn></mtd></mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>
+                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                </article>
+            </main>
+            <footer>
+                <!-- Footer -->
+                html and css, made&nbsp;with&nbsp;&#x2661;
+            </footer>
+        </div>
+        <!-- <script src="main.js"></script> -->
+    </body>
+</html>
  
