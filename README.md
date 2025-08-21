@@ -1,4 +1,4 @@
-# basic-html-css-de
+# basic modern HTML & CSS template
 a very modern, very basic and very small and fast html-css boilerplate file for (scientific) text documents
 
 it is also very powerful!
