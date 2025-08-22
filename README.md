@@ -10,7 +10,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - responsive: works on desktop and mobile
 - automatic dark mode
 - modern semantic HTML structure
-- high performance, works on older hardware
+- very good performance, works on older hardware
 - universally accessible: every device has a browser
 - future-proof through continuous browser development
 - compatible with any text editor
