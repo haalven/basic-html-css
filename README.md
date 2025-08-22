@@ -22,7 +22,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - scripting is available via Javascript / Typescript
 - chatbots can easily help you with everything
 - operating systems can easily search the document’s content
-- there are dozens of tools to convert HTML to PDF
+- there are dozens of tools to convert HTML to PDF or to whatever…
 - publishing the document is just an upload
 
 ## what it is NOT:
