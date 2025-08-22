@@ -30,7 +30,6 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - you can not have a document with raster images or custom fonts in a single file
 - this is not a good solution for printing pages (CSS has limitations here)
 - this is semantic writing and not WYSIWIG
-  - but: you can preview the document in your browser
 - Markdown (and similar languages) are much more simplistic and easier to learn
   - but: to render Markdown it is converted to HTML anyway
   - and: some common elements are missing, so you end up writing HTML anyway
