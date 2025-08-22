@@ -27,6 +27,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 
 ### what it is _not:_
 
+- you can not have a document with raster images or custom fonts in a single file
 - this is not a good solution for printing pages (CSS has limitations here)
 - this is semantic writing and not WYSIWIG
   - but: you can preview the document in your browser
