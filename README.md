@@ -8,7 +8,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - for users familiar with HTML
 - internal CSS with clean, consistent layout
 
-### why HTML & CSS
+### why HTML & CSS?
 
 - responsive: works on desktop and mobile
 - automatic dark mode
