@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML- und CSS-Vorlage</title>
         <style>
+
             :root {
                 --fifty-gray: rgb(127,127,127);
                 --color-red: rgb(235,50,55);
@@ -18,9 +19,11 @@
                 --night-purple: rgb(160,90,205);
                 --bg-transparent: rgba(127,127,127,.05);
             }
+
             * {
                 scroll-margin-top: 1rem;
             }
+
             html {
                 font-family: system-ui, sans-serif;
                 font-variant-ligatures: normal;
@@ -32,33 +35,40 @@
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
+
             body {
                 padding: 1rem;
                 padding-left: 7.5%;
                 padding-right: 7.5%;
             }
+
             header {
                 border-bottom: 1px solid var(--fifty-gray);
                 margin-bottom: 2.5rem;
             }
+
             footer {
                 border-top: 1px solid var(--fifty-gray);
                 margin-top: 2.5rem;
                 font-size: .85rem;
                 color: var(--fifty-gray);
             }
+
             h1, h2, h3, h4, h5, h6 {
                 line-height: 1.33;
             }
+
             h1 {
                 hyphens: none;
             }
+
             hr {
                 height: 0px;
                 color: transparent;
                 border: none;
                 border-top: 1px solid var(--fifty-gray);
             }
+
             table {
                 margin-top: .5rem;
                 margin-bottom: .5rem;
@@ -67,30 +77,37 @@
                 border-bottom: 1px solid;
                 font-size: .9em;
             }
+
             tr {
                 border-bottom: .75px solid var(--fifty-gray);
             }
+
             th, td {
                 padding: .5rem;
                 text-align: left;
                 vertical-align: baseline;
             }
+
             li {
                 padding-top: 0;
                 padding-bottom: .25em;
             }
+
             dl {
                 padding-left: 1rem;
                 padding-bottom: .5rem;
                 font-size: .925em;
             }
+
             dt {
                 padding-top: .5rem;
                 font-weight: 700;
             }
+
             q {
                 font-style: italic;
             }
+
             blockquote {
                 margin-inline-start: 0;
                 margin-inline-end: 0;
@@ -99,11 +116,13 @@
                 padding-left: 1em;
                 font-size: .95em;
             }
+
             cite {
                 font-family: serif;
                 font-size: .925em;
                 font-style: normal;
             }
+
             var {
                 font-family: serif;
                 font-style: italic;
@@ -111,9 +130,11 @@
                 padding-right: 0.075em;
                 line-height: normal;
             }
+
             kbd {
                 font-size: .92em;
             }
+
             code {
                 font-size: .85em;
                 border: 1px solid var(--fifty-gray);
@@ -123,12 +144,15 @@
                 padding-left: .2em;
                 padding-right: .2em;
             }
+
             math {
                 font-size: 1.1em;
             }
+
             .x-overflow {
                 overflow-x: auto;
             }
+
             .codeblock {
                 border-top: 1px solid var(--fifty-gray);
                 border-bottom: 1px solid var(--fifty-gray);
@@ -138,23 +162,28 @@
                 font-size: .8em;
                 white-space: nowrap;
             }
+
             .caption {
                 font-size: .8em;
                 padding-bottom:.33em;
             }
+
             .caption::before {
                 content: "\25b8";
                 padding-right: .3em;
             }
+
             .name {
                 text-transform: uppercase;
                 font-size: .9em;
                 letter-spacing: .07em;
             }
+
             .red { color: var(--color-red); }
             .green { color: var(--color-green); }
             .blue { color: var(--color-blue); }
             .bg { background-color: var(--bg-transparent); }
+
             @media (prefers-color-scheme: dark) {
                 html {
                     color: var(--night-color);
@@ -167,6 +196,7 @@
                 .green { color: var(--night-green); }
                 .blue { color: var(--night-blue); }
             }
+
             @media print {
                 html {
                     font-size: .75rem;
@@ -181,108 +211,107 @@
                     page-break-after: avoid;
                 }
             }
+
         </style>
     </head>
     <body>
-        <div id="page-container">
-            <header>
-                <h1>Minimale HTML- und CSS-Vorlage für Textdokumente</h1>
-                <nav id="nav" hidden>
-                    <!-- Navigation -->
-                </nav>
-            </header>
-            <main>
-                <div id="toc">
-                    <!-- Table of Contents -->
+        <header>
+            <h1>Minimale HTML- und CSS-Vorlage für Textdokumente</h1>
+            <nav id="nav" hidden>
+                <!-- Navigation -->
+            </nav>
+        </header>
+        <main>
+            <section id="toc" hidden>
+                <!-- Table of Contents -->
+            </section>
+            <article lang="de">
+                <!-- Article content -->
+                <h2 id="test">Überschrift zweiter Ordnung</h2>
+                <p>Ich bin ein <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" rel="noopener noreferrer">kleiner Blindtext</a>. Und zwar schon so lange ich <b>denken</b> kann. Es war <i>nicht</i> leicht zu verstehen, was es bedeutet, ein <u>blinder Text</u> zu sein: Man ergibt <q>keinen Sinn</q>. Wirklich <code>keinen Sinn</code>. Man wird zusammenhangslos eingeschoben und <kbd>rumgedreht</kbd> – und oftmals gar nicht erst gelesen.</p>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
+                <p>Betrachten wir das Verfahren nach <span class="name">MÜLLER</span>. Dabei wird die Variable&nbsp;<var>x</var> eingeführt.</p>
+                <ul>
+                    <li>unsortierte Aufzählungen</li>
+                    <li>nummerierte Gegenstände mit
+                        <ul><li>verschachtelten Dingen</li></ul>
+                    </li>
+                </ul>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
+                <p>Farbiger Text in <span class="blue">blau</span>, <span class="green">grün</span> oder <span class="red">rot</span> kann Zusammenhänge hervorheben.</p>
+                <dl class="bg">
+                    <dt>Definition Term eins</dt><dd>Definitionslisten sind sehr nützlich.</dd>
+                    <dt>Definition Term zwei</dt><dd>Sie ähneln einem Wörterbuch (key/value).</dd>
+                </dl>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
+                <h3>Überschrift dritter Ordnung</h3>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
+                <div class="x-overflow">
+                    <table>
+                        <tr class="bg"><th colspan="4">Das ist eine Tabelle</th></tr>
+                        <tr><th style="min-width:5rem">Stadium&nbsp;I</th><td style="min-width:5rem">Lorem ipsum dolor sit amet</td><td style="min-width:5rem">sed diam nonumy eirmod tempor</td><td style="min-width:5rem">consetetur sadipscing elitr</td></tr>
+                        <tr><th>Stadium&nbsp;II</th><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td><td>sed diam nonumy eirmod tempor</td></tr>
+                        <tr><th>Stadium&nbsp;III</th><td>sed diam nonumy eirmod tempor</td><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td></tr>
+                    </table>
                 </div>
-                <article lang="de">
-                    <!-- Article content -->
-                    <h2 id="test">Überschrift zweiter Ordnung</h2>
-                    <p>Ich bin ein <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" rel="noopener noreferrer">kleiner Blindtext</a>. Und zwar schon so lange ich <b>denken</b> kann. Es war <i>nicht</i> leicht zu verstehen, was es bedeutet, ein <u>blinder Text</u> zu sein: Man ergibt <q>keinen Sinn</q>. Wirklich <code>keinen Sinn</code>. Man wird zusammenhangslos eingeschoben und <kbd>rumgedreht</kbd> – und oftmals gar nicht erst gelesen.</p>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
-                    <p>Betrachten wir das Verfahren nach <span class="name">MÜLLER</span>. Dabei wird die Variable&nbsp;<var>x</var> eingeführt.</p>
-                    <ul>
-                        <li>unsortierte Aufzählungen</li>
-                        <li>nummerierte Gegenstände mit
-                            <ul><li>verschachtelten Dingen</li></ul>
-                        </li>
-                    </ul>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
-                    <p>Farbiger Text in <span class="blue">blau</span>, <span class="green">grün</span> oder <span class="red">rot</span> kann Zusammenhänge hervorheben.</p>
-                    <dl class="bg">
-                        <dt>Definition Term eins</dt><dd>Definitionslisten sind sehr nützlich.</dd>
-                        <dt>Definition Term zwei</dt><dd>Sie ähneln einem Wörterbuch (key/value).</dd>
-                    </dl>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
-                    <h3>Überschrift dritter Ordnung</h3>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
-                    <div class="x-overflow">
-                        <table>
-                            <tr class="bg"><th colspan="4">Das ist eine Tabelle</th></tr>
-                            <tr><th style="min-width:5rem">Stadium&nbsp;I</th><td style="min-width:5rem">Lorem ipsum dolor sit amet</td><td style="min-width:5rem">sed diam nonumy eirmod tempor</td><td style="min-width:5rem">consetetur sadipscing elitr</td></tr>
-                            <tr><th>Stadium&nbsp;II</th><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td><td>sed diam nonumy eirmod tempor</td></tr>
-                            <tr><th>Stadium&nbsp;III</th><td>sed diam nonumy eirmod tempor</td><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td></tr>
-                        </table>
-                    </div>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
-                    <blockquote lang="de">Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere? Na gut, ich werde nie in den Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht. Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft, wovon all die richtigen und wichtigen Texte meist nur träumen.</blockquote>
-                    <h4>Überschrift vierter Ordnung</h4>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
-                    <div class="codeblock x-overflow">
-                        <b>from</b> html.parser <b>import</b> <span class="blue">HTMLParser</span><br>
-                        <br>
-                        <b>class</b> <span class="blue">TinyHTMLParser</span>(<span class="blue">HTMLParser</span>):<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_starttag</span></i>(self, tag, attrs):<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'start-tag:'</span>, tag,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'with attributes:'</span>, attrs)<br>
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_endtag</span></i>(self, tag):<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'end-tag:'</span>, tag)<br>
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_data</span></i>(self, data):<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'data:'</span>, data)<br>
-                        <br>
-                        html_text = <span class="green">'insert HTML markup here'</span><br>
-                        <span class="blue">parser</span> = <span class="blue">TinyHTMLParser</span>()<br>
-                        <span class="blue">parser</span><i><span class="red">.feed</span></i>(html_text)<br>
-                    </div>
-                    <p class="caption">Python Codeblock zur Demonstration von <kbd>html.parser.HTMLParser</kbd></p>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
-                    <math>
-                        <mstyle displaystyle="true">
-                            <munderover>
-                                <mo>&Sum;</mo>
-                                <mrow><mi>i</mi><mo>=</mo><mn>1</mn>
-                                </mrow>
-                                <mi>n</mi>
-                            </munderover>
-                        </mstyle>
-                        <msub>
-                            <mi>a</mi>
-                            <mi>i</mi>
-                        </msub>
-                        <mo>=</mo> 
-                        <mrow>
-                            <mo>(</mo>
-                            <mtable>
-                                <mtr><mtd><mn>1</mn></mtd></mtr>
-                                <mtr><mtd><mn>2</mn></mtd></mtr>
-                                <mtr><mtd><mn>3</mn></mtd></mtr>
-                            </mtable>
-                            <mo>)</mo>
-                        </mrow>
-                    </math>
-                    <p class="caption">Formeln mit <kbd>MathML</kbd></p>
-                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
-                    <p>Literaturangaben:</p>
-                    <cite><a href="https://doi.org/10.1097/00000658-199912000-00010" rel="noopener noreferrer">Neuhaus,&nbsp;P., Jonas,&nbsp;S., & Bechstein,&nbsp;W.&nbsp;O. (1999). <i>Extended resections for hilar cholangiocarcinoma.</i> Ann&nbsp;Surg, 230(6), 808-818.</a></cite>
-                </article>
-            </main>
-            <footer>
-                <!-- Footer -->
-                html and css, made&nbsp;with&nbsp;&#x2661;
-            </footer>
-        </div>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
+                <blockquote lang="de">Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere? Na gut, ich werde nie in den Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht. Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft, wovon all die richtigen und wichtigen Texte meist nur träumen.</blockquote>
+                <h4>Überschrift vierter Ordnung</h4>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
+                <div class="codeblock x-overflow">
+                    <b>from</b> html.parser <b>import</b> <span class="blue">HTMLParser</span><br>
+                    <br>
+                    <b>class</b> <span class="blue">TinyHTMLParser</span>(<span class="blue">HTMLParser</span>):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_starttag</span></i>(self, tag, attrs):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'start-tag:'</span>, tag,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'with attributes:'</span>, attrs)<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_endtag</span></i>(self, tag):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'end-tag:'</span>, tag)<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>def</b> <i><span class="red">handle_data</span></i>(self, data):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span class="red">print</span></i>(<span class="green">'data:'</span>, data)<br>
+                    <br>
+                    html_text = <span class="green">'insert HTML markup here'</span><br>
+                    <span class="blue">parser</span> = <span class="blue">TinyHTMLParser</span>()<br>
+                    <span class="blue">parser</span><i><span class="red">.feed</span></i>(html_text)<br>
+                </div>
+                <p class="caption">Python Codeblock zur Demonstration von <kbd>html.parser.HTMLParser</kbd></p>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
+                <math>
+                    <mstyle displaystyle="true">
+                        <munderover>
+                            <mo>&Sum;</mo>
+                            <mrow><mi>i</mi><mo>=</mo><mn>1</mn>
+                            </mrow>
+                            <mi>n</mi>
+                        </munderover>
+                    </mstyle>
+                    <msub>
+                        <mi>a</mi>
+                        <mi>i</mi>
+                    </msub>
+                    <mo>=</mo> 
+                    <mrow>
+                        <mo>(</mo>
+                        <mtable>
+                            <mtr><mtd><mn>1</mn></mtd></mtr>
+                            <mtr><mtd><mn>2</mn></mtd></mtr>
+                            <mtr><mtd><mn>3</mn></mtd></mtr>
+                        </mtable>
+                        <mo>)</mo>
+                    </mrow>
+                </math>
+                <p class="caption">Formeln mit <kbd>MathML</kbd></p>
+                <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
+                <p>Literaturangaben:</p>
+                <cite><a href="https://doi.org/10.1097/00000658-199912000-00010" rel="noopener noreferrer">Neuhaus,&nbsp;P., Jonas,&nbsp;S., & Bechstein,&nbsp;W.&nbsp;O. (1999). <i>Extended resections for hilar cholangiocarcinoma.</i> Ann&nbsp;Surg, 230(6), 808-818.</a></cite>
+            </article>
+        </main>
+        <footer>
+            <!-- Footer -->
+            html and css, made&nbsp;with&nbsp;&#x2661;
+        </footer>
         <!-- <script src="main.js"></script> -->
     </body>
 </html>
