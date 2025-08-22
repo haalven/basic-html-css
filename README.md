@@ -21,7 +21,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - HTML and CSS are very powerful languages if you need something special
 - scripting is available via Javascript / Typescript
 - chatbots can easily help you with everything
-- operating systems can easily search the documents content
+- operating systems can easily search the document’s content
 - there are dozens of tools to convert HTML to PDF
 - publishing the document is just an upload
 
