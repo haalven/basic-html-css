@@ -34,3 +34,18 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
   - and: common elements are missing, requiring HTML anyway
 - [Typst](https://typst.app/) is much better than everything
   - but: you have to learn it
+
+## semantic structure
+
+- html
+  - head
+    - title
+  - body
+    - header
+      - h1
+      - nav
+    - main
+      - article
+        - h2
+    - footer
+
