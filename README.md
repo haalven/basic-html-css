@@ -33,7 +33,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - cannot embed raster images or custom fonts in a single file
 - not well-suited for high-quality printing (CSS limitations)
 - semantic writing approach, not WYSIWYG
-- [Markdown](https://www.markdownguide.org/basic-syntax) and [similar formats](https://mystmd.org/sandbox) are simpler to learn
+- [Markdown](https://markdownguide.offshoot.io/basic-syntax/) and [similar formats](https://mystmd.org/sandbox) are simpler to learn
   - but: MD is converted to HTML for rendering
   - and: common elements are missing, requiring HTML anyway
 - [Typst](https://typst.app/) is much better than everything
