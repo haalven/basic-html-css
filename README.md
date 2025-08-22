@@ -32,6 +32,6 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
   - but: you can preview the document in your browser
 - Markdown (and similar languages) are much more simplistic and easier to learn
   - but: to render Markdown it is converted to HTML anyway
-  - and: some common elements are missing
+  - and: some common elements are missing, so you end up writing HTML anyway
 - [Typst](https://typst.app/) is much better than everything
   - but: you have to learn it
