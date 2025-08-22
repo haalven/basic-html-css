@@ -3,7 +3,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 
 [raw_textfile](https://raw.githubusercontent.com/haalven/basic-html-css-de/refs/heads/main/html_template.html)
 
-## what is this?
+### what is this?
 
 - this is for people familiar with HTML
 - it is a template for HTML text documents
@@ -25,7 +25,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - there are dozens of tools to convert HTML to PDF or to whatever…
 - publishing the document is just an upload
 
-## what it is NOT:
+### what it is NOT:
 
 - this is not a good solution for printing pages (CSS has limitations here)
 - this is semantic writing and not WYSIWIG
