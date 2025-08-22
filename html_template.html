@@ -9,7 +9,7 @@
                 --fifty-gray: rgb(127,127,127);
                 --color-red: rgb(235,50,55);
                 --color-green: rgb(20,155,20);
-                --color-blue: rgb(25,40,210);
+                --color-blue: rgb(15,20,210);
                 --night-color: rgb(210,210,210);
                 --night-bg: rgb(30,30,30);
                 --night-red: rgb(215,50,55);
@@ -65,7 +65,7 @@
                 border-collapse: collapse;
                 border-top: 1.5px solid;
                 border-bottom: 1px solid;
-                font-size: .9rem;
+                font-size: .9em;
             }
             tr {
                 border-bottom: .75px solid var(--fifty-gray);
@@ -77,9 +77,15 @@
             }
             li {
                 padding-top: 0;
-                padding-bottom: .25rem;
+                padding-bottom: .25em;
+            }
+            dl {
+                padding-left: 1rem;
+                padding-bottom: .5rem;
+                font-size: .925em;
             }
             dt {
+                padding-top: .5rem;
                 font-weight: 700;
             }
             q {
@@ -89,31 +95,36 @@
                 margin-inline-start: 0;
                 margin-inline-end: 0;
                 border-left: 1.5px solid;
-                padding: .5rem;
-                padding-left: 1rem;
-                font-size: .95rem;
+                padding: .5em;
+                padding-left: 1em;
+                font-size: .95em;
+            }
+            cite {
+                font-family: serif;
+                font-size: .925em;
+                font-style: normal;
             }
             var {
                 font-family: serif;
                 font-style: italic;
-                font-size: 1.2rem;
+                font-size: 1.2em;
                 padding-right: 0.075em;
                 line-height: normal;
             }
             kbd {
-                font-size: .92rem;
+                font-size: .92em;
             }
             code {
-                font-size: .85rem;
+                font-size: .85em;
                 border: 1px solid var(--fifty-gray);
-                border-radius: .2rem;
+                border-radius: .2em;
                 background-color: var(--bg-transparent);
-                padding: .1rem;
-                padding-left: .2rem;
-                padding-right: .2rem;
+                padding: .1em;
+                padding-left: .2em;
+                padding-right: .2em;
             }
             math {
-                font-size: 1.1rem;
+                font-size: 1.1em;
             }
             .x-overflow {
                 overflow-x: auto;
@@ -122,15 +133,22 @@
                 border-top: 1px solid var(--fifty-gray);
                 border-bottom: 1px solid var(--fifty-gray);
                 background-color: var(--bg-transparent);
-                padding: 1rem;
+                padding: 1em;
                 font-family: monospace;
                 font-size: .8em;
                 white-space: nowrap;
             }
+            .caption {
+                font-size: .85em;
+            }
+            .caption::before {
+                content: "▸";
+                padding-right: .3em;
+            }
             .name {
                 text-transform: uppercase;
-                font-size: .9rem;
-                letter-spacing: .033rem;
+                font-size: .9em;
+                letter-spacing: .033em;
             }
             .red { color: var(--color-red); }
             .green { color: var(--color-green); }
@@ -150,7 +168,7 @@
             }
             @media print {
                 html {
-                    font-size: .75em;
+                    font-size: .75rem;
                 }
                 img {
                     page-break-before: auto;
@@ -178,16 +196,23 @@
                 </div>
                 <article lang="de">
                     <!-- Article content -->
-                    <h2 id="test">Überschrift 2.&nbsp;Ordnung</h2>
-                    <p>Auch gibt es <em>niemanden</em>, der den <b>Schmerz</b> an sich liebt, sucht oder wünscht <u>nur</u>, weil er Schmerz ist, <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" rel="noopener noreferrer">es sei denn</a>, es kommt zu <q>zufälligen Umständen</q>, in denen Mühen und Schmerz ihm große <code>Freude bereiten</code> können. Um ein triviales Beispiel zu nehmen, wer von uns <kbd>unterzieht sich</kbd> je anstrengender körperlicher <span class="name">Betätigung</span>, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht <var>x</var>, einen Menschen zu tadeln</p>
+                    <h2 id="test">Überschrift zweiter Ordnung</h2>
+                    <p>Ich bin ein <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" rel="noopener noreferrer">kleiner Blindtext</a>. Und zwar schon so lange ich <b>denken</b> kann. Es war <i>nicht</i> leicht zu verstehen, was es bedeutet, ein <u>blinder Text</u> zu sein: Man ergibt <q>keinen Sinn</q>. Wirklich <code>keinen Sinn</code>. Man wird zusammenhangslos eingeschoben und <kbd>rumgedreht</kbd> – und oftmals gar nicht erst gelesen.</p>
+                    <p>Betrachten wir das Verfahren nach <span class="name">MÜLLER</span>. Dabei wird die Variable&nbsp;<var>x</var> eingeführt.</p>
                     <ul>
-                        <li>der die Entscheidung trifft,</li>
-                        <li>eine Freude zu genießen,</li>
-                        <li>die keine unangenehmen Folgen hat</li>
+                        <li>unsortierte Aufzählungen</li>
+                        <li>nummerierte Gegenstände mit
+                            <ul><li>verschachtelten Dingen</li></ul>
+                        </li>
                     </ul>
-                    <p>oder einen, der <span class="blue">Schmerz vermeidet</span>, welcher keine daraus <span class="green">resultierende Freude</span> nach sich zieht? Auch gibt es <span class="red">niemanden</span>, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn.</p>
+                    <p>Farbiger Text in <span class="blue">blau</span>, <span class="green">grün</span> oder <span class="red">rot</span> kann Zusammenhänge hervorheben.</p>
+                    <dl class="bg">
+                        <dt>Definition Term eins</dt><dd>Definitionslisten sind sehr nützlich.</dd>
+                        <dt>Definition Term zwei</dt><dd>Sie ähneln einem Wörterbuch (key/value).</dd>
+                    </dl>
+                    <cite><a href="https://doi.org/10.1097/00000658-199912000-00010" rel="noopener noreferrer">Neuhaus,&nbsp;P., Jonas,&nbsp;S., & Bechstein,&nbsp;W.&nbsp;O.&nbsp;(1999). <i>Extended resections for hilar cholangiocarcinoma.</i> Ann&nbsp;Surg, 230(6), 808-818.</a></cite>
                     <h3>Überschrift 3.&nbsp;Ordnung</h3>
-                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen.</p>
                     <div class="x-overflow">
                         <table>
                             <tr class="bg"><th colspan="4">Das ist eine Tabelle</th></tr>
@@ -196,10 +221,10 @@
                             <tr><th>Stadium&nbsp;III</th><td>sed diam nonumy eirmod tempor</td><td>consetetur sadipscing elitr</td><td>Lorem ipsum dolor sit amet</td></tr>
                         </table>
                     </div>
-                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
-                    <blockquote lang="de">Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen <b>Mühen und Schmerz</b>. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu <q>zufälligen Umständen</q>, in denen Mühen und Schmerz. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</blockquote>
+                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
+                    <blockquote lang="de">Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere? Na gut, ich werde nie in den Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht. Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft, wovon all die richtigen und wichtigen Texte meist nur träumen.</blockquote>
                     <h4>Überschrift 4.&nbsp;Ordnung</h4>
-                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
                     <div class="codeblock x-overflow">
                         <b>from</b> html.parser <b>import</b> <span class="blue">HTMLParser</span><br>
                         <br>
@@ -218,7 +243,8 @@
                         <span class="blue">parser</span> = <span class="blue">TinyHTMLParser</span>()<br>
                         <span class="blue">parser</span><i><span class="red">.feed</span></i>(html_text)<br>
                     </div>
-                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <p class="caption">Python Codeblock zur Demonstration von <kbd>html.parser.HTMLParser</kbd></p>
+                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
                     <math>
                         <mstyle displaystyle="true">
                             <munderover>
@@ -243,7 +269,7 @@
                             <mo>)</mo>
                         </mrow>
                     </math>
-                    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz.</p>
+                    <p>Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn.</p>
                 </article>
             </main>
             <footer>
@@ -254,4 +280,3 @@
         <!-- <script src="main.js"></script> -->
     </body>
 </html>
- 
