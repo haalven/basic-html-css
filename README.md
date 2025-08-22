@@ -3,10 +3,13 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 
 [raw_textfile](https://raw.githubusercontent.com/haalven/basic-html-css-de/refs/heads/main/html_template.html)
 
-### features
+### what is this?
 
 - for users familiar with HTML
 - internal CSS with clean, consistent layout
+
+### why HTML & CSS
+
 - responsive: works on desktop and mobile
 - automatic dark mode
 - modern semantic HTML structure
