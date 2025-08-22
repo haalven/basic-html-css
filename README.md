@@ -22,6 +22,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - no compatibility issues
 - no proprietary code
 - HTML and CSS are highly customizable
+- browsers can translate documents on the fly
 - optional scripting via JavaScript / TypeScript
 - easy assistance from chatbots and AI tools
 - system-level search support for document content
