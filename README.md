@@ -3,35 +3,34 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 
 [raw_textfile](https://raw.githubusercontent.com/haalven/basic-html-css-de/refs/heads/main/html_template.html)
 
-### what is this?
+### features
 
-- this is for people familiar with HTML
-- it is a template for HTML text documents
-- the internal CSS does a clean layout for common elements
-- works on computers and mobile screens
-- switches automatically to dark style in night mode
-- the semantic structure of the HTML template is modern
-- very performative, works easily on older hardware
-- because every device has a browser, this works everywhere
-- browser development and optimization is ongoing, this is future-proof
-- you can use any editor software you want
-- writing HTML tags can be done faster by [Zen coding](https://emmet.io/)
+- for users familiar with HTML
+- internal CSS with clean, consistent layout
+- responsive: works on desktop and mobile
+- automatic dark mode
+- modern semantic HTML structure
+- high performance, works on older hardware
+- universally accessible: every device has a browser
+- future-proof through continuous browser development
+- compatible with any text editor
+- faster authoring with [Zen coding](https://emmet.io/)
 - no compatibility issues
-- no proprietary code involved
-- HTML and CSS are very powerful languages if you need something special
-- scripting is available via Javascript / Typescript
-- chatbots can easily help you with everything
-- operating systems can easily search the document’s content
-- there are dozens of tools to convert HTML to PDF or to whatever…
-- publishing the document is just an upload
+- no proprietary code
+- HTML and CSS are highly customizable
+- optional scripting via JavaScript / TypeScript
+- easy assistance from chatbots and AI tools
+- system-level search support for document content
+- dozens of tools for converting HTML to PDF or other formats
+- simple publishing just through file upload
 
 ### what it is _not:_
 
-- you can not have a document with raster images or custom fonts in a single file
-- this is not a good solution for printing pages (CSS has limitations here)
-- this is semantic writing and not WYSIWIG
-- Markdown (and similar languages) are much more simplistic and easier to learn
-  - but: to render Markdown it is converted to HTML anyway
-  - and: some common elements are missing, so you end up writing HTML anyway
+- cannot embed raster images or custom fonts in a single file
+- not well-suited for high-quality printing (CSS limitations)
+- semantic writing approach, not WYSIWYG
+- Markdown and similar formats are simpler to learn
+  - but: Markdown is converted to HTML for rendering
+  - and: common elements are missing, requiring HTML anyway
 - [Typst](https://typst.app/) is much better than everything
   - but: you have to learn it
