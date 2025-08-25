@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Title</title>
+        <style>
+
+:root {
+    --fifty-gray: rgb(127,127,127);
+    --color-red: rgb(235,50,55);
+    --color-green: rgb(20,155,20);
+    --color-blue: rgb(15,20,210);
+    --night-color: rgb(210,210,210);
+    --night-bg: rgb(30,30,30);
+    --night-red: rgb(215,50,55);
+    --night-green: rgb(20,155,20);
+    --night-blue: rgb(95,110,255);
+    --night-purple: rgb(160,90,205);
+    --bg-transparent: rgba(127,127,127,.05);
+}
+
+* {
+    scroll-margin-top: 1rem;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    font-variant-ligatures: normal;
+    font-variant-numeric: slashed-zero;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    hyphens: auto;
+    quotes: "\201e" "\201c" "\201a" "\2018";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding: 1rem;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+header {
+    border-bottom: 1px solid var(--fifty-gray);
+    margin-bottom: 2.5rem;
+}
+
+footer {
+    border-top: 1px solid var(--fifty-gray);
+    margin-top: 2.5rem;
+    font-size: .85rem;
+    color: var(--fifty-gray);
+}
+
+#toc {
+    background-color: var(--bg-transparent);
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 1rem;
+    font-size: .9em;
+}
+.toc-h2 { padding-left: 2rem; }
+.toc-h3 { padding-left: 4rem; }
+.toc-h4 { padding-left: 6rem; }
+.toc-h5 { padding-left: 8rem; }
+.toc-h6 { padding-left: 10rem; }
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.33;
+}
+
+h1 {
+    hyphens: none;
+}
+
+hr {
+    height: 0px;
+    color: transparent;
+    border: none;
+    border-top: 1px solid var(--fifty-gray);
+}
+
+table {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-collapse: collapse;
+    border-top: 1.5px solid;
+    border-bottom: 1px solid;
+    font-size: .9em;
+}
+
+tr {
+    border-bottom: .75px solid var(--fifty-gray);
+}
+
+th, td {
+    padding: .5rem;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+li {
+    padding-top: 0;
+    padding-bottom: .25em;
+}
+
+dl {
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    font-size: .925em;
+}
+
+dt {
+    padding-top: .5rem;
+    font-weight: 700;
+}
+
+q {
+    font-style: italic;
+}
+
+blockquote {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-left: 1.5px solid;
+    padding: .5em;
+    padding-left: 1em;
+    font-size: .95em;
+}
+
+cite {
+    font-family: serif;
+    font-size: .925em;
+    font-style: normal;
+}
+
+var {
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.15em;
+    padding-right: 0.075em;
+    line-height: normal;
+}
+
+kbd {
+    font-size: .92em;
+}
+
+code {
+    font-size: .85em;
+    border: 1px solid var(--fifty-gray);
+    border-radius: .2em;
+    background-color: var(--bg-transparent);
+    padding: .1em;
+    padding-left: .2em;
+    padding-right: .2em;
+}
+
+math {
+    font-size: 1.1em;
+}
+
+summary {
+    font-weight: 700;
+}
+
+.x-overflow {
+    overflow-x: auto;
+}
+
+.codeblock {
+    border-top: 1px solid var(--fifty-gray);
+    border-bottom: 1px solid var(--fifty-gray);
+    background-color: var(--bg-transparent);
+    padding: 1em;
+    font-family: monospace;
+    font-size: .8em;
+    white-space: nowrap;
+}
+
+.caption {
+    font-size: .8em;
+    padding-bottom:.33em;
+}
+.caption::before {
+    content: "\25b8";
+    padding-right: .3em;
+}
+
+.name {
+    font-variant-caps: small-caps;
+    text-transform: lowercase;
+    font-size: 1.18em;
+    letter-spacing: .04em;
+}
+
+.big { font-size: 1.333em; }
+
+.not-italic { font-style: normal !important; }
+
+.bg { background-color: var(--bg-transparent); }
+
+.red { color: var(--color-red); }
+.green { color: var(--color-green); }
+.blue { color: var(--color-blue); }
+
+@media (prefers-color-scheme: dark) {
+
+    html {
+        color: var(--night-color);
+        background-color: var(--night-bg);
+    }
+
+    a { color: var(--night-blue); }
+    a:visited { color: var(--night-purple); }
+    a:active { color: var(--night-red); }
+
+    .red { color: var(--night-red); }
+    .green { color: var(--night-green); }
+    .blue { color: var(--night-blue); }
+}
+
+@media print {
+    html {
+        font-size: .8rem;
+    }
+
+    img {
+        page-break-before: auto;
+        page-break-after: auto;
+        page-break-inside: avoid;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Document Title</h1>
+            <nav id="nav" hidden>
+                <!-- Navigation -->
+            </nav>
+        </header>
+
+        <main>
+            <section hidden>
+                <details>
+                    <summary>Table of Contents</summary>
+                    <div id="toc">
+                    <!-- Table of Contents -->
+                    </div>
+                </details>
+            </section>
+            <article lang="en">
+
+                <!-- Article content -->
+
+
+
+                <!-- /End of Article content -->
+
+            </article>
+        </main>
+
+        <footer>
+            <!-- Footer -->
+            html and css, made&nbsp;with&nbsp;&#x2661;
+        </footer>
+
+        <script>
+
+// build the Table of Contents
+let c = 1;
+const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+headings.forEach(function(heading) {
+    let a = document.createElement('a');
+    if (heading.id) {
+        a.href = '#' + heading.id;
+    } else {
+        heading.id = 'heading-' + c.toString();
+        a.href = '#heading-' + c.toString();
+        c++;
+    } 
+    a.textContent = heading.textContent;
+    let d = document.createElement('div');
+    d.setAttribute('class', 'toc-' + heading.tagName.toLowerCase());
+    d.appendChild(a);
+    document.getElementById('toc').appendChild(d);
+});
+
+        </script>
+
+    </body>
+</html>
