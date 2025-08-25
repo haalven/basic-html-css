@@ -14,7 +14,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 - automatic dark mode
 - modern semantic HTML structure
 - very good performance, works on older hardware
-- the template size is &lt;&nbsp;16&nbsp;㎅
+- the template size is &lt;&nbsp;6&nbsp;㎅
 - universally accessible: every device has a browser
 - future-proof through continuous browser development
 - compatible with any text editor
