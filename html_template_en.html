@@ -31,7 +31,10 @@ html {
     font-size: 1.1rem;
     line-height: 1.5;
     hyphens: auto;
-    quotes: "\201e" "\201c" "\201a" "\2018";
+    /* english */
+    quotes: "\201c" "\201d" "\2018" "\2019";
+    /* deutsch */
+    /* quotes: "\201e" "\201c" "\201a" "\2018"; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -54,6 +57,7 @@ footer {
     color: var(--fifty-gray);
 }
 
+/* Table of Contents */
 #toc {
     background-color: var(--bg-transparent);
     white-space: nowrap;
@@ -273,16 +277,17 @@ summary {
         <script>
 
 // build the Table of Contents
-let c = 1;
+/*
+let i = 1;
 const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 headings.forEach(function(heading) {
     let a = document.createElement('a');
     if (heading.id) {
         a.href = '#' + heading.id;
     } else {
-        heading.id = 'heading-' + c.toString();
-        a.href = '#heading-' + c.toString();
-        c++;
+        heading.id = 'heading-' + i.toString();
+        a.href = '#heading-' + i.toString();
+        i++;
     } 
     a.textContent = heading.textContent;
     let d = document.createElement('div');
@@ -290,6 +295,7 @@ headings.forEach(function(heading) {
     d.appendChild(a);
     document.getElementById('toc').appendChild(d);
 });
+*/
 
         </script>
 
