@@ -41,8 +41,12 @@ html {
 
 body {
     padding: 1rem;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    @media (width < 80ch) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 header {
