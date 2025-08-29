@@ -31,9 +31,9 @@ html {
     font-size: 1.1rem;
     line-height: 1.5;
     hyphens: auto;
-    /* english */
+    /* english quotes */
     quotes: "\201c" "\201d" "\2018" "\2019";
-    /* deutsch */
+    /* german quotes */
     /* quotes: "\201e" "\201c" "\201a" "\2018"; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -62,7 +62,7 @@ footer {
 }
 
 /* Table of Contents */
-#toc {
+#toc-container {
     background-color: var(--bg-transparent);
     white-space: nowrap;
     overflow-x: auto;
@@ -263,7 +263,7 @@ img {
             <section hidden>
                 <details>
                     <summary>Table of Contents</summary>
-                    <div id="toc">
+                    <div id="toc-container">
                     <!-- Table of Contents -->
                     </div>
                 </details>
@@ -303,7 +303,7 @@ headings.forEach(function(heading) {
     let d = document.createElement('div');
     d.setAttribute('class', 'toc-' + heading.tagName.toLowerCase());
     d.appendChild(a);
-    document.getElementById('toc').appendChild(d);
+    document.getElementById('toc-container').appendChild(d);
 });
 */
 
