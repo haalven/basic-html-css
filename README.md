@@ -1,7 +1,7 @@
 # basic modern HTML & CSS template
 a very modern, very basic and very small and fast html-css boilerplate file for (scientific) text documents
 
-[minimal CSS raw_textfile](https://github.com/haalven/basic-html-css/raw/refs/heads/main/minimal-html-css-en.html) (based on [this article](https://thecascade.dev/article/least-amount-of-css)
+[minimal CSS raw_textfile](https://github.com/haalven/basic-html-css/raw/refs/heads/main/minimal-html-css-en.html) (based on [this article](https://thecascade.dev/article/least-amount-of-css))
 
 [basic CSS raw_textfile](https://github.com/haalven/basic-html-css/raw/refs/heads/main/basic-html-css-en.html)
 
