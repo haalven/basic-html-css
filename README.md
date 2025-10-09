@@ -3,7 +3,7 @@ a very modern, very basic and very small and fast html-css boilerplate file for 
 
 ➔ [minimal CSS raw textfile](https://github.com/haalven/basic-html-css/raw/refs/heads/main/minimal-html-css-en.html) (based on [this article](https://thecascade.dev/article/least-amount-of-css))
 
-➔ [basic CSS raw textfile](https://github.com/haalven/basic-html-css/raw/refs/heads/main/basic-html-css-en.html)
+➔ [basic CSS raw textfile](https://github.com/haalven/basic-html-css/raw/refs/heads/main/basic-html-css-en.html) (for scientific texts)
 
 ### what is this?
 
